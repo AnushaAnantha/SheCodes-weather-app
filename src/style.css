@@ -1,0 +1,77 @@
+body {
+  padding: 100px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif, Symbol;
+  color: #5a5c5e;
+}
+h1 {
+  font-size: 50px;
+}
+.tempSelect {
+  font-size: 20px;
+  display: inline;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+.anchor-none {
+  text-decoration: none;
+}
+
+h2 {
+  color: #2274c7;
+}
+.fas.fa-smog {
+  font-size: 30px;
+  color: #fff;
+}
+
+.fas.fa-cloud-rain {
+  font-size: 30px;
+  color: #fff;
+}
+.fas.fa-cloud-sun {
+  font-size: 30px;
+  color: #fff;
+}
+.dateAndTime {
+  display: inline;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  font-size: 15px;
+}
+.searchBoxStyle {
+  text-align: center;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.searchButtonStyle {
+  text-align: center;
+  border-radius: 20px;
+  background-color: #2274c7;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.currentButtonStyle {
+  text-align: center;
+  border-radius: 20px;
+  background-color: #2274c7;
+  color: #fff;
+  padding: 10px 20px;
+}
+.row {
+  padding-top: 130px;
+}
+.card {
+  border-radius: 35px 35px;
+  border-color: #2274c7;
+  background-color: #2274c7;
+}
+.card-title {
+  color: #fff;
+}
