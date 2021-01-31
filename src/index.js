@@ -59,11 +59,13 @@ function updateTemperature(){
   let h2 = document.querySelector("h2");
   h2.innerHTML = `${enterCity.value}`;
   h2.innerHTML = h2.innerHTML.toUpperCase();
-
- let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${enterCity.value} &appid=667b283f74e42ac5a41950daddbddfc8&units=metric`;
+  console.log(enterCity);
+  console.log(h2);
+  let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${enterCity.value} &appid=667b283f74e42ac5a41950daddbddfc8&units=metric`;
 axios.get(apiUrl).then(showTemperature);
 }
   function showTemperature(response) {
+      console.log(response);
   let temperature = Math.round(response.data.main.temp);
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${temperature}˚C`;
