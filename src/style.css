@@ -3,6 +3,7 @@ body {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif, Symbol;
   color: #5a5c5e;
+  border: red;
 }
 h1 {
   font-size: 50px;
