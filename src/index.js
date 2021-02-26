@@ -29,12 +29,7 @@ function formatDate(currentDate) {
   ];
   let month = months[currentDate.getMonth()];
   minutes = formatMinutes(minutes);
-  hours = formatHours(hours);
   return ` ${day},  ${hours}:${minutes} <br/>${month} ${date}, ${year}`;
-}
-function formatHours(hours){
-  if (hours < 10) {
-    hours = `0${hours}`;
 }
 function formatMinutes(minutes) {
   if (minutes < 10) {
