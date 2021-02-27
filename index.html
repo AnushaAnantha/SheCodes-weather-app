@@ -38,9 +38,9 @@
       </div>
       <br />
       <br />
-      <h6>Today: 1°/-2°</h6>
-      <h6>Current air quality : Excellent</h6>
-      <h6>Humidity : 80%</h6>
+      <h6 id="tempMinMax">Today : °/°</h6>
+      <h6 id="feelsLike">Feels like : °</h6>
+      <h6 id="humidity">Humidity : %</h6>
       <br />
 
       <form id="search-form">
@@ -59,31 +59,25 @@
           id="current-location"
         />
       </form>
-      <div class="row">
+      <div class="row" id="forecast_cards">
         <div class="col-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Sunday <br />4°/2°</h5>
-              <i class="fas fa-smog"></i>
+              <h5 class="card-title" id="forecast_1"></h5>
             </div>
           </div>
         </div>
         <div class="col-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">
-                Monday <br />
-                6°/3°
-              </h5>
-              <i class="fas fa-cloud-rain"></i>
+              <h5 class="card-title" id="forecast_2"></h5>
             </div>
           </div>
         </div>
         <div class="col-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Tuesday <br />7°/5°</h5>
-              <i class="fas fa-cloud-sun"></i>
+              <h5 class="card-title" id="forecast_3"></h5>
             </div>
           </div>
         </div>
