@@ -44,12 +44,13 @@ dateAndTime.innerHTML = formattedDate;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", updateTemperature);
 
+let fahrenheit = false;
+
 function returnCelsius() {
   let h1 = document.querySelector("h1");
   h1.innerHTML = "0 °C";
+  fahrenheit = false;
 }
-
-let fahrenheit = false;
 
 function returnFahrenheit() {
   let h1 = document.querySelector("h1");
