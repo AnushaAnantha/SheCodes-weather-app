@@ -45,17 +45,17 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", updateTemperature);
 
 let fahrenheit = false;
-let temperature = 0;
+let temperatureCelsius = 0;
 
 function returnCelsius() {
   let h1 = document.querySelector("h1");
-  h1.innerHTML =  `${temperature}˚C`;
+  h1.innerHTML =  `${temperatureCelsius}˚C`;
   fahrenheit = false;
 }
 
 function returnFahrenheit() {
   let h1 = document.querySelector("h1");
-  h1.innerHTML = `${temperature}˚F`;
+  h1.innerHTML = `${(temperatureCelsius * 9/5) + 32}˚F`;
   fahrenheit = true;
 }
 
@@ -78,13 +78,13 @@ function updateTemperature(event) {
   axios.get(apiUrl).then(showTemperature);
 }
 function showTemperature(response) {
-  temperature = Math.round(response.data.main.temp);
+  temperatureCelsius = Math.round(response.data.main.temp);
   let h1 = document.querySelector("h1");
   if (fahrenheit == true){
-    temperature = (temperature * 9/5) + 32;
-  h1.innerHTML = `${temperature}˚F`;
+    let temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
+  h1.innerHTML = `${temperatureFahrenheit}˚F`;
   }else{
-    h1.innerHTML = `${temperature}˚C`;
+    h1.innerHTML = `${temperatureCelsius}˚C`;
   }
 }
 
