@@ -49,9 +49,12 @@ function returnCelsius() {
   h1.innerHTML = "0 °C";
 }
 
+let fahrenheit = false;
+
 function returnFahrenheit() {
   let h1 = document.querySelector("h1");
   h1.innerHTML = "32 °F";
+  fahrenheit = true;
 }
 
 let anchorCelsius = document.querySelector("#celsius-click");
@@ -75,7 +78,12 @@ function updateTemperature(event) {
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let h1 = document.querySelector("h1");
-  h1.innerHTML = `${temperature}˚C`;
+  if (fahrenheit == true){
+    temperature = (temperature * 9/5) + 32;
+  h1.innerHTML = `${temperature}˚F`;
+  }else{
+    h1.innerHTML = `${temperature}˚C`;
+  }
 }
 
 //Bonus - display current location and temperature
