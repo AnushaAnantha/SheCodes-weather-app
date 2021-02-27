@@ -72,8 +72,7 @@ function updateTemperature(event) {
   let enterCity = document.querySelector("#search-text-input");
   let h2 = document.querySelector("h2");
   h2.innerHTML = `${enterCity.value}`;
-  h2.innerHTML = h2.innerHTML.toUpperCase();
-
+  h2.innerHTML = h2.innerHTML.charAt(0).toUpperCase() + h2.innerHTML.slice(1).toLowerCase();
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${enterCity.value} &appid=667b283f74e42ac5a41950daddbddfc8&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
