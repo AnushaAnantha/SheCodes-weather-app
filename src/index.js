@@ -37,9 +37,15 @@ function formatMinutes(minutes) {
   }
   return minutes;
 }
+
 let formattedDate = formatDate(new Date());
 let dateAndTime = document.querySelector("#dateAndTime");
 dateAndTime.innerHTML = formattedDate;
+
+
+let searchTextInput = document.querySelector("#search-text-input");
+searchTextInput.value = "Berlin";
+getTemperature();
 
 
 let form = document.querySelector("#search-form");
