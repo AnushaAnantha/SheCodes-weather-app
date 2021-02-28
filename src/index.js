@@ -46,6 +46,7 @@ dateAndTime.innerHTML = formattedDate;
 let searchTextInput = document.querySelector("#search-text-input");
 searchTextInput.value = "Berlin";
 getTemperature();
+searchTextInput.value = "";
 
 
 let form = document.querySelector("#search-form");
@@ -94,7 +95,6 @@ function getTemperature(){
   axios.get(forecastApiUrl).then(showForecastTemperature);
 }
 function showTemperature(response) {
-  console.log(response);
   temperatureCelsius = Math.round(response.data.main.temp);
   let tempMax = Math.round(response.data.main.temp_max);
   let tempMin = Math.round(response.data.main.temp_min);

@@ -1,26 +1,18 @@
 body {
   padding: 10px;
   text-align: center;
-  font-family: Helvetica, Arial, sans-serif, Symbol;
 }
 
 #bodyContainer {
   padding: 5px;
   width: 1000px;
-  height: 750px;
+  height: 740px;
   border-radius: 30px;
   text-align: center;
-  font-family: Helvetica, Arial, sans-serif, Symbol;
-  color: rgb(141, 13, 13);
-  background-image: linear-gradient(
-    to right,
-    #e4afcb 0%,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #e2c58b 30%,
-    #c2ce9c 64%,
-    #7edbdc 100%
-  );
+  font-family: "Oswald";
+  font-size: 20px;
+  color: #fadcac;
+  background-color: #187767;
 }
 
 h1 {
@@ -36,10 +28,12 @@ h1 {
 
 .anchor-none {
   text-decoration: none;
+  color: #fadcac;
 }
 
 h2 {
-  color: #2274c7;
+  color: #0f1123;
+  font-weight: bolder;
 }
 
 h6 {
@@ -57,9 +51,12 @@ h6 {
 }
 .searchBoxStyle {
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px;
   padding: 10px;
+  border-style: solid;
+  background-color: transparent;
+  color: #fff;
 }
 
 .searchButtonStyle {
@@ -68,6 +65,8 @@ h6 {
   background-color: transparent;
   color: #fff;
   padding: 10px 20px;
+  text-decoration: none;
+  border-style: solid;
 }
 
 .currentButtonStyle {
@@ -76,14 +75,33 @@ h6 {
   background-color: transparent;
   color: #fff;
   padding: 10px 20px;
+  border-style: solid;
 }
 .row {
   padding-top: 10px;
 }
 .card {
-  border-radius: 35px 35px;
   background-color: transparent;
+  border: none;
 }
 .card-title {
-  color: #fff;
+  color: #fadcac;
+}
+
+.gitHub {
+  font-size: large;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::placeholder {
+  color: white;
 }
