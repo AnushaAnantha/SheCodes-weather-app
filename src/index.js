@@ -93,8 +93,6 @@ function getTemperature(){
 
   let forecastApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${enterCity.value} &appid=667b283f74e42ac5a41950daddbddfc8&units=metric`;
   axios.get(forecastApiUrl).then(showForecastTemperature);
-  searchTextInput.value = "";
-
 }
 function showTemperature(response) {
   temperatureCelsius = Math.round(response.data.main.temp);
