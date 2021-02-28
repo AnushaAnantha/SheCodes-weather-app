@@ -163,6 +163,8 @@ function displayCityName(response) {
   let h2 = document.querySelector("h2");
   h2.innerHTML = `${cityName}`;
   h2.innerHTML = h2.innerHTML.toUpperCase();
+  searchTextInput.value = cityName;
+  getTemperature();
 }
 
 function showCurrentPosition() {
