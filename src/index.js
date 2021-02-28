@@ -77,8 +77,6 @@ anchorFahrenheit.addEventListener("click", returnFahrenheit);
 
 // adding the  real-time weather update feature
 
-
-
 function updateTemperature(event) {
   event.preventDefault();
   getTemperature();
@@ -101,7 +99,9 @@ function showTemperature(response) {
   let tempMax = Math.round(response.data.main.temp_max);
   let tempMin = Math.round(response.data.main.temp_min);
   let feelsLikeTemp = Math.round(response.data.main.feels_like);
-
+let mainWeatherIcon = "http://openweathermap.org/img/wn/" + response.data.weather[0].icon + "@2x.png";
+let iconMain = document.querySelector("#main_weather_icon");
+iconMain.setAttribute("src", mainWeatherIcon);
   let h1 = document.querySelector("h1");
   let h6 = document.querySelector("#tempMinMax");
   let humidity = document.querySelector("#humidity");
@@ -122,8 +122,6 @@ function showTemperature(response) {
   }
 
   humidity.innerHTML = "Humidity : "  + response.data.main.humidity + " %";
-  
-
 }
 
 function showForecastTemperature(response) {

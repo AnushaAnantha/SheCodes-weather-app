@@ -1,18 +1,37 @@
 body {
-  padding: 100px;
+  padding: 10px;
   text-align: center;
   font-family: Helvetica, Arial, sans-serif, Symbol;
-  color: #5a5c5e;
 }
+
+#bodyContainer {
+  padding: 5px;
+  width: 1000px;
+  height: 750px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif, Symbol;
+  color: rgb(141, 13, 13);
+  background-image: linear-gradient(
+    to right,
+    #e4afcb 0%,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #e2c58b 30%,
+    #c2ce9c 64%,
+    #7edbdc 100%
+  );
+}
+
 h1 {
   font-size: 50px;
 }
 .tempSelect {
   font-size: 20px;
-  display: inline;
-  position: fixed;
-  top: 25px;
-  right: 25px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  right: -400px;
 }
 
 .anchor-none {
@@ -22,25 +41,19 @@ h1 {
 h2 {
   color: #2274c7;
 }
-.fas.fa-smog {
-  font-size: 30px;
-  color: #fff;
+
+h6 {
+  font-size: 17px;
+  font-weight: bolder;
 }
 
-.fas.fa-cloud-rain {
-  font-size: 30px;
-  color: #fff;
-}
-.fas.fa-cloud-sun {
-  font-size: 30px;
-  color: #fff;
-}
 .dateAndTime {
-  display: inline;
-  position: fixed;
-  top: 25px;
-  left: 25px;
-  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: -380px;
+  font-size: 17px;
+  font-weight: bolder;
 }
 .searchBoxStyle {
   text-align: center;
@@ -51,26 +64,25 @@ h2 {
 
 .searchButtonStyle {
   text-align: center;
-  border-radius: 20px;
-  background-color: #2274c7;
+  border-radius: 10px;
+  background-color: transparent;
   color: #fff;
   padding: 10px 20px;
 }
 
 .currentButtonStyle {
   text-align: center;
-  border-radius: 20px;
-  background-color: #2274c7;
+  border-radius: 10px;
+  background-color: transparent;
   color: #fff;
   padding: 10px 20px;
 }
 .row {
-  padding-top: 130px;
+  padding-top: 10px;
 }
 .card {
   border-radius: 35px 35px;
-  border-color: #2274c7;
-  background-color: #2274c7;
+  background-color: transparent;
 }
 .card-title {
   color: #fff;
